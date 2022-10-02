@@ -1,6 +1,6 @@
-# Huobi Golang SDK
+# New Huo Golang SDK
 
-This is Huobi Go SDK,  you can install to your Golang project and use this SDK to query all market data, trading and manage your account.
+This is New Huo Go SDK,  you can install to your Golang project and use this SDK to query all market data, trading and manage your account.
 
 The SDK supports RESTful API invoking, and concurrently subscribing the market, account and order update from the Websocket connection.
 
@@ -42,7 +42,7 @@ import (
   "github.com/huobirdcenter/huobi_golang/pkg/client"
 )
 
-// Get the timestamp from Huobi server and print on console
+// Get the timestamp from New Huo server and print on console
 client := new(client.CommonClient).Init(config.Host)
 resp, err := client.GetTimestamp()
 
@@ -91,8 +91,8 @@ As the example indicates, there are two important namespaces: **client** and **r
 
 This SDK provides examples that under **/cmd** folder, if you want to run the examples to access private data, you need below additional steps:
 
-1. Create an **API Key** first from Huobi official website
-2. Create **key.go** into your **config** folder (package). The purpose of this file is to prevent submitting SecretKey into repository by accident, so this file is already added in the *.gitignore* file. 
+1. Create an **API Key** first from New Huo official website
+2. Create **key.go** into your **config** folder (package). The purpose of this file is to prevent submitting SecretKey into repository by accident, so this file is already added in the *.gitignore* file.
 
 3. Assign your secret key to string *SecretKey*:
 
@@ -110,7 +110,7 @@ Regarding the difference between public data and private data you can find detai
 
 ### Client
 
-In this SDK, the client is the struct to access the Huobi API. In order to isolate the private data with public data, and isolated different kind of data, the client category is designated to match the API category. 
+In this SDK, the client is the struct to access the New Huo API. In order to isolate the private data with public data, and isolated different kind of data, the client category is designated to match the API category.
 
 All the client is listed in below table. Each client is very small and simple, it is only responsible to operate its related data, you can pick up multiple clients to create your own application based on your business.
 
